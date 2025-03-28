@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Person Shooter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <div class="loading-text">Loading Game Assets...</div>
+    </div>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="hud">
+            <div class="health-bar">
+                <div class="health-fill"></div>
+            </div>
+            <div class="ammo-counter">30/90</div>
+            <div class="score">0</div>
+            <div class="crosshair"></div>
+        </div>
+        <div id="menu">
+            <h1>FPS GAME</h1>
+            <button id="start-btn">START GAME</button>
+            <button id="options-btn">OPTIONS</button>
+            <button id="quit-btn">QUIT</button>
+        </div>
+    </div>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
